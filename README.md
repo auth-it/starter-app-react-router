@@ -22,6 +22,6 @@ Depending on your authentication server, you will need to make sure that it is e
 ## Start the app
 
 ```bash
-pnpm
+pnpm i
 pnpm dev
 ```
