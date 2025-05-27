@@ -26,8 +26,8 @@ export const {
   // NOTE: If you are using keycloak, the issuerUri should be formatted like this:
   // issuerUri: https://<YOUR_KEYCLOAK_DOMAIN><KC_RELATIVE_PATH>/realms/<REALM_NAME>
   // KC_RELATIVE_PATH is by default "" in modern keycloak, on older keycloak it used to be "/auth" by default.
-  issuerUri: import.meta.env.VITE_OIDC_ISSUER_URI,
-  clientId: import.meta.env.VITE_OIDC_CLIENT_ID,
+  issuerUri: import.meta.env.VITE_AUTHIT_ISSUER_URI,
+  clientId: import.meta.env.VITE_AUTHIT_CLIENT_ID,
   __unsafe_clientSecret: import.meta.env.VITE_OIDC_CLIENT_SECRET || undefined,
   __unsafe_useIdTokenAsAccessToken:
     import.meta.env.VITE_OIDC_USE_ID_TOKEN_AS_ACCESS_TOKEN === "true",
@@ -124,7 +124,7 @@ export const { OidcProvider, useOidc, getOidc } =
         }) :
         createReactOidc({
             issuerUri: import.meta.env.VITE_OIDC_ISSUER,
-            clientId: import.meta.env.VITE_OIDC_CLIENT_ID,
+            clientId: import.meta.env.VITE_AUTHIT_CLIENT_ID,
             homeUrl: import.meta.env.BASE_URL,
             decodedIdTokenSchema
         });

@@ -1,18 +1,16 @@
-# react-router-dom + oidc-spa + Vite + Auth.it
+# Auth.it + react-router-dom + oidc-spa + Vite
 
 This is a sample application to demonstrate how to quickly and securely protect an application using [OIDC](https://openid.net/developers/how-connect-works/). It uses [react-router-dom](https://reactrouter.com/), [oidc-spa](https://www.oidc-spa.dev/) and [vite](https://vite.dev/) to show you how to secure an provide user identity to a single page application (SPA). Please use this as a basis to start your own applications or protect an existing one.
 
 ## Configure your environment
 
-Update the `.env.local` to connect to your authentication server. If you are coming here from [Auth.it](https://auth.it), you can easily configure by copying the values from the [Dashboard overview](https://dash.auth.it) like this:
+Update the `.env.local` (copy `.env.local.sample`) to connect to your authentication server. If you are coming here from [Auth.it](https://auth.it), you can easily configure by copying the values from the [Dashboard overview](https://dash.auth.it) or the [Applications page](https://dash.auth.it/developer/applications) like this:
 
 ```
-# ISSUER_URI in step 2 of the dashboard overview page.
-VITE_OIDC_ISSUER_URI=https://somename.authit.cloud/realms/somename
-# CLIENT_ID in step 2 of the dashboard overview page. Usually "frontend".
-VITE_OIDC_CLIENT_ID=frontend
-# The name of your Auth.it deployment
-VITE_OIDC_REALM=somename
+# ISSUER_URI (Step 2 of the [dashboard overview page](https://dash.auth.it/))
+VITE_AUTHIT_ISSUER_URI=https://somename.authit.cloud/realms/somename
+# CLIENT_ID (Step 2 of the [dashboard overview page](https://dash.auth.it/))
+VITE_AUTHIT_CLIENT_ID=frontend
 ```
 
 ## Set your redirect URI

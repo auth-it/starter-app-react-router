@@ -30,7 +30,6 @@ export default function PublicPage() {
                 </AlertDescription>
               </Alert>
             )}
-            <ProfileCard className="mb-8" />
 
             <div className="text-center">
               <h1 className="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">
